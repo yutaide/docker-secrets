@@ -1,4 +1,4 @@
-FROM ubuntu:22.04 AS builder
+FROM ubuntu:22.04
 RUN \
   --mount=type=secret,id=CTI_PRODUCT_JWT_SECRET \
   mkdir -p /cti/secrets; \
