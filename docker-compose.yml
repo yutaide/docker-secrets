@@ -1,0 +1,12 @@
+services:
+  myapp:
+    container_name: myapp
+    build:
+      context: .
+      dockerfile: dockerfile
+      secrets:
+        - CTI_PRODUCT_JWT_SECRET
+
+secrets:
+  CTI_PRODUCT_JWT_SECRET:
+    environment: CTI_PRODUCT_JWT_SECRET
